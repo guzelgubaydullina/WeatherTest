@@ -128,11 +128,6 @@ public final class CompatibleAnimationView: UIView {
   }
 
   @objc
-  public var isAnimationPlaying: Bool {
-    return animationView.isAnimationPlaying
-  }
-
-  @objc
   public func play() {
     play(completion: nil)
   }

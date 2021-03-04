@@ -177,7 +177,6 @@ class CitiesListController: UITableViewController {
     }
 }
 
-
 extension CitiesListController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredWeathers = weathers.filter {

@@ -30,16 +30,16 @@ class CityController: UITableViewController {
         let infoViewModel1 = CityCellInfoViewModel(title: "Ощущаемая температура",
                                                    value: String(weatherInfo.weather?.feelsLike ?? 0))
         
-        let infoViewModel2 = CityCellInfoViewModel(title: "Скорость ветра",
+        let infoViewModel2 = CityCellInfoViewModel(title: "Скорость ветра, м/с",
                                                    value: String(weatherInfo.weather?.windSpeed ?? 0))
         
         let infoViewModel3 = CityCellInfoViewModel(title: "Направление ветра",
                                                    value: weatherInfo.weather?.windDirectionDescription() ?? "")
         
-        let infoViewModel4 = CityCellInfoViewModel(title: "Давление",
+        let infoViewModel4 = CityCellInfoViewModel(title: "Давление, мм.рт.ст",
                                                    value: String(weatherInfo.weather?.pressure ?? 0))
         
-        let infoViewModel5 = CityCellInfoViewModel(title: "Влажность воздуха",
+        let infoViewModel5 = CityCellInfoViewModel(title: "Влажность воздуха, %",
                                                    value: String(weatherInfo.weather?.humidity ?? 0))
         
         viewModels = [

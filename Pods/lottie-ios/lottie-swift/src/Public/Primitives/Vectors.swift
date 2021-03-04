@@ -13,7 +13,7 @@ public struct Vector1D {
     self.value = value
   }
   
-  public let value: Double
+  let value: Double
   
 }
 
@@ -24,9 +24,9 @@ public struct Vector1D {
  */
 public struct Vector3D {
   
-  public let x: Double
-  public let y: Double
-  public let z: Double
+  var x: Double
+  var y: Double
+  var z: Double
   
   public init(x: Double, y: Double, z: Double) {
     self.x = x
